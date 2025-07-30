@@ -1,0 +1,31 @@
+csdn:
+  api:
+    categories: Java场景面试宝典
+    cookie: ${CSDN_API_COOKIE:CSDN_API_COOKIE}
+
+spring:
+  application:
+    name: mcp-server-csdn
+  ai:
+    mcp:
+      server:
+        name: ${spring.application.name}
+        version: 1.0.0
+  main:
+    banner-mode: off
+    web-application-type: none
+  profiles:
+    active: local
+
+logging:
+  pattern:
+    console:
+  file:
+    name: data/log/${spring.application.name}.log
+
+server:
+  servlet:
+    encoding:
+      charset: UTF-8
+      force: true
+      enabled: true

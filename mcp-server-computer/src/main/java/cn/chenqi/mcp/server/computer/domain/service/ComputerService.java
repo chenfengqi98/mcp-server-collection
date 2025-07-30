@@ -75,7 +75,7 @@ public class ComputerService {
         return cache.toString();
     }
 
-    private static String getMacSpecificInfo() {
+    private String getMacSpecificInfo() {
         StringBuilder cache = new StringBuilder();
         // macOS特定的系统信息获取
         try {
@@ -91,7 +91,7 @@ public class ComputerService {
         return cache.toString();
     }
 
-    private static String getLinuxSpecificInfo() {
+    private String getLinuxSpecificInfo() {
         StringBuilder cache = new StringBuilder();
         // Linux特定的系统信息获取
         try {
